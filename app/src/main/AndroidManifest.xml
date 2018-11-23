@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.WaveActivity" />
+        <activity android:name=".activity.FlowLayoutActivity" />
+        <activity android:name=".activity.VoiceActivity" />
+        <activity android:name=".activity.MoveActivity" />
     </application>
 
 </manifest>

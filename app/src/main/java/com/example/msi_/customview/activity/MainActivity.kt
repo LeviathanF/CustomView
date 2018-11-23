@@ -2,6 +2,7 @@ package com.example.msi_.customview.activity
 
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.widget.LinearLayout
 import com.example.msi_.customview.R
 import com.example.msi_.customview.adapter.OnlyOneTypeAdapter
 import com.example.msi_.customview.base.BaseActivity
@@ -25,6 +26,10 @@ class MainActivity : BaseActivity() {
         val list = ArrayList<RVBean>()
         list.add(RVBean("原始波浪展示",WaveActivity::class.java))
         list.add(RVBean("新版波浪展示",WaveActivity::class.java,1))
+        list.add(RVBean("自动填充换行的layout",FlowLayoutActivity::class.java))
+        list.add(RVBean("音量大小图",VoiceActivity::class.java))
+        list.add(RVBean("跟随手指移动的Vuew",MoveActivity::class.java))
+
         adapter = OnlyOneTypeAdapter(SingleButtonHolder::class.java)
         adapter.setList(list)
         rvContent.adapter = adapter

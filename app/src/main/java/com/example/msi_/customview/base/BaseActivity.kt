@@ -18,16 +18,6 @@ abstract class BaseActivity: AppCompatActivity(){
         initRv()
     }
 
-
-
-    override fun onStart() {
-        super.onStart()
-    }
-
-    override fun onStop() {
-        super.onStop()
-    }
-
     abstract fun getLayoutId():Int
 
     abstract fun initView()

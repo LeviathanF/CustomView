@@ -15,8 +15,10 @@ import android.view.animation.LinearInterpolator
  *@Time： 2018/7/27 15:03
  *@Description：自定义使用贝塞尔曲线绘制波浪
  **/
-class WaveView:View {
+class WaveView(context: Context, attributeSet: AttributeSet?) : View(context, attributeSet) {
+    //        初始化前置波浪的paint
     private var paint: Paint = Paint()
+    //        初始化后置波浪的paint
     private var sPaint: Paint = Paint()
     private var path: Path
     private lateinit var bottomPath: Path
@@ -28,14 +30,11 @@ class WaveView:View {
     private var offset = 0f
     private val distance = 150f
 
-    constructor(context: Context,attributeSet: AttributeSet?):super(context,attributeSet){
-//        初始化前置波浪的paint
+    init {
         paint.style = Paint.Style.FILL_AND_STROKE
         paint.color = Color.parseColor("#FB8300")
         paint.strokeWidth = 1f
         paint.isAntiAlias = true
-
-//        初始化后置波浪的paint
         sPaint.style = Paint.Style.FILL_AND_STROKE
         sPaint.color = Color.parseColor("#ffa02f")
         sPaint.strokeWidth = 1f
