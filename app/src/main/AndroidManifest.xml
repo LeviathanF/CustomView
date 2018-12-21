@@ -20,6 +20,7 @@
         <activity android:name=".activity.FlowLayoutActivity" />
         <activity android:name=".activity.VoiceActivity" />
         <activity android:name=".activity.MoveActivity" />
+        <activity android:name=".activity.SwipeRefreshActivity" />
     </application>
 
 </manifest>

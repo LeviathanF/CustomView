@@ -29,6 +29,7 @@ class MainActivity : BaseActivity() {
         list.add(RVBean("自动填充换行的layout",FlowLayoutActivity::class.java))
         list.add(RVBean("音量大小图",VoiceActivity::class.java))
         list.add(RVBean("跟随手指移动的Vuew",MoveActivity::class.java))
+        list.add(RVBean("刷新",SwipeRefreshActivity::class.java))
 
         adapter = OnlyOneTypeAdapter(SingleButtonHolder::class.java)
         adapter.setList(list)
