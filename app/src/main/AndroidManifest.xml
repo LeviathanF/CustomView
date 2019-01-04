@@ -21,6 +21,7 @@
         <activity android:name=".activity.VoiceActivity" />
         <activity android:name=".activity.MoveActivity" />
         <activity android:name=".activity.SwipeRefreshActivity" />
+        <activity android:name=".activity.SliderActivity" />
     </application>
 
 </manifest>
