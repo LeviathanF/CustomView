@@ -14,4 +14,11 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun testCos(){
+        for (i in 0..6) {
+            println(Math.cos(Math.toRadians(i*60.0)))
+        }
+    }
 }

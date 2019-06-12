@@ -22,6 +22,10 @@
         <activity android:name=".activity.MoveActivity" />
         <activity android:name=".activity.SwipeRefreshActivity" />
         <activity android:name=".activity.SliderActivity" />
+        <activity android:name=".activity.VideoActivity" />
+        <activity android:name=".activity.PathMeasureActivity" />
+        <activity android:name=".activity.SplashActivity" />
+        <activity android:name=".activity.ParticlesActivity" />
     </application>
 
 </manifest>
